@@ -1,0 +1,27 @@
+extends ../layouts/master
+
+
+
+block header
+block footer
+
+block grid-test
+
+
+
+block content
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      .swiper-slide
+        |slide 123
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  
+  ul
+    each route in data.routes
+      li
+        a(href=route.href)= route.title

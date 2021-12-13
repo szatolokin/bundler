@@ -1,0 +1,44 @@
+/*
+  BEM (global)
+
+  helpers
+    index (for order)
+
+    variables
+    mixins (use variables)
+
+  layout
+    index (for order)
+
+    normalize (npm)
+    reset (npm)
+
+    my-reset (use helpers)
+    
+    base (use helpers)
+  
+  libs
+    index (for order)
+    
+    swiper (npm)
+    select2 (npm)
+    ...
+  
+  content
+    index (for order)
+
+    utils
+      ...
+    components (use helpers)
+      ...
+    pages (use helpers)
+      ...
+*/
+
+@import "./helpers/index.scss";
+
+@import "./layout/index.scss";
+
+@import "./libs/index.scss";
+
+@import "./content/index.scss";

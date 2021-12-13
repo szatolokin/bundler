@@ -1,0 +1,43 @@
+-
+  var test = 'test'
+
+block variables
+  - var param = false
+
+
+
+include ../components/svg
+
+include ../components/header
+include ../components/footer
+
+include ../components/grid-test
+
+
+
+doctype html
+
+html(lang='ru')
+  
+  head
+    meta(charset="utf-8")
+    title= data.title
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  
+  body.body
+
+    .wrapper
+
+      block header
+        +header
+
+      main.main
+        block content
+
+      block footer
+        +footer
+
+      block grid-test
+        +grid-test
+
+    block scripts
